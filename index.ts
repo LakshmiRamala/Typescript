@@ -15,3 +15,4 @@ class ItDepartment extends Department {
 class AdminDepartment extends Department {
   protected holidays: Holidays = [];
 }
+console.log("hi");
