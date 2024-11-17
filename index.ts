@@ -29,3 +29,31 @@ class AdminDepartment extends Department {
       super("Admin Department")
     }
 }
+const itholidays:Holidays=[
+  {
+    date:new Date(2024,2,10),
+    reason:"It DepartmentDay"
+
+  },
+  {
+    date:new Date(2024,8,15),
+    reason:"Indepence Day"
+  }
+]
+const admindepholidays:Holidays=[
+  {
+    date:new Date(2024,8,30),
+    reason:"admin DepartmentDay"
+
+  },
+  {
+    date:new Date(2024,8,15),
+    reason:"Indepence Day"
+  }
+]
+const itDepartment=new ItDepartment();
+const adminDepartment=new AdminDepartment();
+itDepartment.addHolidays(itholidays);
+adminDepartment.addHolidays(admindepholidays);
+console.log({itDepartment});
+console.log({adminDepartment});
